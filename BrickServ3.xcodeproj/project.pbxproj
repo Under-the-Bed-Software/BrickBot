@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B92BAE72692B66300423C47 /* IRC in Frameworks */ = {isa = PBXBuildFile; productRef = 4B92BAE62692B66300423C47 /* IRC */; };
 		4BAFE5FC2691FA5300474639 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFE5FB2691FA5300474639 /* main.swift */; };
+		4BAFE6092691FB6300474639 /* BrickServBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFE6082691FB6300474639 /* BrickServBot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,7 @@
 /* Begin PBXFileReference section */
 		4BAFE5F82691FA5300474639 /* BrickServ3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BrickServ3; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAFE5FB2691FA5300474639 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4BAFE6082691FB6300474639 /* BrickServBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickServBot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B92BAE72692B66300423C47 /* IRC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				4BAFE5FB2691FA5300474639 /* main.swift */,
+				4BAFE6082691FB6300474639 /* BrickServBot.swift */,
 			);
 			path = BrickServ3;
 			sourceTree = "<group>";
@@ -78,6 +83,9 @@
 			dependencies = (
 			);
 			name = BrickServ3;
+			packageProductDependencies = (
+				4B92BAE62692B66300423C47 /* IRC */,
+			);
 			productName = BrickServ3;
 			productReference = 4BAFE5F82691FA5300474639 /* BrickServ3 */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +114,9 @@
 				Base,
 			);
 			mainGroup = 4BAFE5EF2691FA5300474639;
+			packageReferences = (
+				4B92BAE52692B66300423C47 /* XCRemoteSwiftPackageReference "swift-nio-irc-client" */,
+			);
 			productRefGroup = 4BAFE5F92691FA5300474639 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -121,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BAFE5FC2691FA5300474639 /* main.swift in Sources */,
+				4BAFE6092691FB6300474639 /* BrickServBot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +298,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B92BAE52692B66300423C47 /* XCRemoteSwiftPackageReference "swift-nio-irc-client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Under-the-Bed-Software/swift-nio-irc-client";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B92BAE62692B66300423C47 /* IRC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B92BAE52692B66300423C47 /* XCRemoteSwiftPackageReference "swift-nio-irc-client" */;
+			productName = IRC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BAFE5F02691FA5300474639 /* Project object */;
 }

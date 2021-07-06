@@ -23,9 +23,18 @@
         "package": "swift-nio-irc-client",
         "repositoryURL": "https://github.com/Under-the-Bed-Software/swift-nio-irc-client",
         "state": {
+          "branch": "develop",
+          "revision": "8f4b34e70ef1b47003a80b3aa5384d55411a8d38",
+          "version": null
+        }
+      },
+      {
+        "package": "swift-nio-ssl",
+        "repositoryURL": "https://github.com/apple/swift-nio-ssl.git",
+        "state": {
           "branch": null,
-          "revision": "dec7af29e0a205d00c6ba9c7a2707e496bccddb5",
-          "version": "0.8.2"
+          "revision": "9db7cee4b62c39160a6bd513a47a1ecdcceac18a",
+          "version": "2.14.0"
         }
       },
       {

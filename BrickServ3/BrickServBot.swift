@@ -10,7 +10,7 @@ import struct Foundation.Date
 import NIO
 import IRC
 
-public let defaultNickName = IRCNickName("bricks")!
+public let defaultNickName = IRCNickName("BrickBot")!
 
 open class BrickServBot: IRCClientDelegate {
     
@@ -18,12 +18,13 @@ open class BrickServBot: IRCClientDelegate {
         
         override public init(port: Int = DefaultIRCPort,
                              host: String = "irc.snoonet.org",
+                             securityOptions: IRCClientSecurityOptions = IRCClientSecurityOptions(),
                              password: String? = nil,
                              nickname: IRCNickName = defaultNickName,
                              userInfo: IRCUserInfo? = nil,
                              eventLoopGroup: EventLoopGroup? = nil)
         {
-            super.init(port: port, host: host, password: password,
+            super.init(port: port, host: host, securityOptions: securityOptions, password: password,
                        nickname: nickname, userInfo: userInfo,
                        eventLoopGroup: eventLoopGroup)
         }

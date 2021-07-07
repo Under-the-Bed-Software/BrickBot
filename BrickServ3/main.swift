@@ -9,16 +9,16 @@ import Foundation
 import Dispatch
 import IRC
 
-let sslOptions = IRCClientSecurityOptions(useSecure: true, vertificationMode: .noChecks)
+let sslOptions = IRCClientSecurityOptions(useSecure: true, vertificationMode: .strict)
 
-let bot = BrickServBot(options: BrickServBot.Options(port: 6697, host: "192.168.1.202", securityOptions: sslOptions, nickname: IRCNickName("brickbot")!, userInfo: IRCUserInfo(username: "bricks", usermask: IRCUserMode(), realname: "bricks")))
+let bot = BrickServBot(options: BrickServBot.Options(port: 6697, host: "chat.irc.ltd", securityOptions: sslOptions, nickname: IRCNickName("brickbot")!, userInfo: IRCUserInfo(username: "bricks", usermask: IRCUserMode(), realname: "bricks")))
 bot.connect()
 
 let queue = DispatchQueue(label: "REPL")
 
 queue.async {
     var connected = true
-    bot.ircClient.sendMessage(.init(command: .JOIN(channels: [IRCChannelName("#lug")!], keys: nil)))
+    bot.ircClient.sendMessage(.init(command: .JOIN(channels: [IRCChannelName("#h4x")!], keys: nil)))
 
     while(connected) {
         print("> ", terminator: "")
@@ -28,7 +28,7 @@ queue.async {
         switch command {
         case "PRIVMSG" :
             print(splitInput)
-            bot.ircClient.sendMessage(.init(command: .PRIVMSG([IRCMessageRecipient("#lug")!], "HELLO")))
+            bot.ircClient.sendMessage(.init(command: .PRIVMSG([IRCMessageRecipient("#h4x")!], "BRICKS")))
         case "NICK" :
             print(splitInput)
         case "JOIN" :

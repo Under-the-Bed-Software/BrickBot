@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "swift-nio",
+        "repositoryURL": "https://github.com/apple/swift-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "d79e33308b0ac83326b0ead0ea6446e604b8162d",
+          "version": "2.30.0"
+        }
+      },
+      {
+        "package": "swift-nio-irc",
+        "repositoryURL": "https://github.com/Under-the-Bed-Software/swift-nio-irc.git",
+        "state": {
+          "branch": null,
+          "revision": "782e6d3bcd892efaedc9c530b2d5c5fbb42a680e",
+          "version": "0.8.2"
+        }
+      },
+      {
+        "package": "swift-nio-irc-client",
+        "repositoryURL": "https://github.com/Under-the-Bed-Software/swift-nio-irc-client",
+        "state": {
+          "branch": null,
+          "revision": "c76d4281b84c5e89493916908d5058286e9b73c3",
+          "version": "0.8.3"
+        }
+      },
+      {
+        "package": "swift-nio-ssl",
+        "repositoryURL": "https://github.com/apple/swift-nio-ssl.git",
+        "state": {
+          "branch": null,
+          "revision": "9db7cee4b62c39160a6bd513a47a1ecdcceac18a",
+          "version": "2.14.0"
+        }
+      },
+      {
+        "package": "swift-nio-transport-services",
+        "repositoryURL": "https://github.com/apple/swift-nio-transport-services",
+        "state": {
+          "branch": null,
+          "revision": "39587bceccda72780e2a8a8c5e857e42a9df2fa8",
+          "version": "1.11.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
